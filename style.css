@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e2f5; /* Um azul bem claro para o fundo */
+    color: #000000; /* Letras em preto */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #982a2a; /* Azul principal para o cabeçalho */
+    color: white; /* Cor do texto do cabeçalho permanece branca para contraste */
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero {
+    text-align: center;
+    /* Adiciona flexbox para centralizar a imagem principal verticalmente, se necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    /* ESTILOS MODIFICADOS PARA A FOTO PRINCIPAL */
+    width: 180px; /* Mesmo tamanho das fotos da galeria */
+    height: 180px; /* Mesmo tamanho das fotos da galeria */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 8px; /* Borda levemente arredondada, como a galeria */
+    border: 3px solid #c46b74; /* Mesma borda da galeria */
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out; /* Adiciona a transição ao hover */
+}
+
+.hero img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.hero h2 {
+    color: #982a2a; /* Azul principal */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #000000; /* Letras em preto */
+}
+
+.message h3 {
+    color: #982a2a; /* Azul principal */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.message p {
+    margin-bottom: 1rem;
+    color: #000000; /* Letras em preto */
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    color: #000000; /* Letras em preto */
+    margin-top: 1.5rem;
+}
+
+.memories .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.memories .gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #c46b74;
+    transition: transform 0.3s ease-in-out;
+}
+
+.memories .gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #982a2a; /* Azul principal para o rodapé */
+    color: white; /* Cor do texto do rodapé permanece branca para contraste */
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
+    }
+
+    .memories .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
